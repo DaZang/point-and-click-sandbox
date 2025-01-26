@@ -1,63 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://egi7r84maufj"]
 
-[ext_resource type="Theme" uid="uid://7fkam3v6qs6" path="res://generic_resources/pixel_ui_theme.tres" id="1_nnh4d"]
-[ext_resource type="Texture2D" uid="uid://cd43fs2w51mry" path="res://environments/start_environment.png" id="1_v5coy"]
+[ext_resource type="PackedScene" uid="uid://bngvf7oav2f8y" path="res://environments/start_environment/start_environment.tscn" id="1_e4yif"]
+[ext_resource type="PackedScene" uid="uid://dcjnxoc7vx15f" path="res://ui/bottom_ui.tscn" id="2_7uipg"]
 
 [node name="World" type="Node2D"]
 
-[node name="Environment" type="Node2D" parent="."]
+[node name="StartEnvironment" parent="." instance=ExtResource("1_e4yif")]
 
-[node name="Sprite2D" type="Sprite2D" parent="Environment"]
-texture = ExtResource("1_v5coy")
-offset = Vector2(480, 200)
-
-[node name="BottomUI" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 400.0
-offset_right = 960.0
-offset_bottom = 540.0
-size_flags_vertical = 8
-theme = ExtResource("1_nnh4d")
-
-[node name="Panel" type="Panel" parent="BottomUI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="BottomUI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="BottomUI/HBoxContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 6
-theme_override_constants/margin_right = 0
-theme_override_constants/margin_bottom = 0
-
-[node name="GridContainer" type="GridContainer" parent="BottomUI/HBoxContainer/MarginContainer"]
-layout_mode = 2
-columns = 3
-
-[node name="TakeActionButton" type="Button" parent="BottomUI/HBoxContainer/MarginContainer/GridContainer"]
-layout_mode = 2
-theme_type_variation = &"ActionButton"
-text = "Take"
-
-[node name="TalkActionButton" type="Button" parent="BottomUI/HBoxContainer/MarginContainer/GridContainer"]
-layout_mode = 2
-theme_type_variation = &"ActionButton"
-text = "Talk
-"
-
-[node name="Panel2" type="Panel" parent="BottomUI/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
+[node name="BottomUI" parent="." instance=ExtResource("2_7uipg")]

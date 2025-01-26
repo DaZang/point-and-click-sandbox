@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bngvf7oav2f8y"]
+
+[ext_resource type="Texture2D" uid="uid://cd43fs2w51mry" path="res://environments/start_environment.png" id="1_0hogg"]
+
+[node name="StartEnvironment" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0hogg")
+offset = Vector2(240, 100)
+
+[node name="NavigatableArea" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="NavigatableArea"]
+polygon = PackedVector2Array(49, 171, 112, 172, 292, 186, 413, 179, 480, 190, 480, 200, 69, 200, 49, 177)
