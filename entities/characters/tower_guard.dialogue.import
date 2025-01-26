@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://ddlb4olphsely"
+path="res://.godot/imported/tower_guard.dialogue-35618aa7511005950bddf2eeec54b2f8.tres"
+
+[deps]
+
+source_file="res://entities/characters/tower_guard.dialogue"
+dest_files=["res://.godot/imported/tower_guard.dialogue-35618aa7511005950bddf2eeec54b2f8.tres"]
+
+[params]
+
+defaults=true

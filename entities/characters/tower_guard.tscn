@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://4a83frkc42fm"]
+[gd_scene load_steps=5 format=3 uid="uid://4a83frkc42fm"]
 
 [ext_resource type="Script" path="res://entities/characters/tower_guard.gd" id="1_06td8"]
 [ext_resource type="Texture2D" uid="uid://bixo5eh7khhkb" path="res://entities/characters/tower_guard.png" id="1_ywkwd"]
+[ext_resource type="Resource" uid="uid://ddlb4olphsely" path="res://entities/characters/tower_guard.dialogue" id="2_m3n4e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qkjvm"]
 radius = 13.0
@@ -9,6 +10,7 @@ height = 60.0
 
 [node name="TowerGuard" type="Area2D"]
 script = ExtResource("1_06td8")
+dialogue_resource = ExtResource("2_m3n4e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ywkwd")

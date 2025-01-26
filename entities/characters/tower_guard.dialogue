@@ -1,0 +1,9 @@
+~ start
+Tower guard: Who is there coming along this dark road?.
+Gregory: I am a...
+- merchant
+	Gregory: I am but a humble merchant from Ravenshire.
+- mercenary
+	Gregory: I am a free mercenary coming to aid the baron.
+- End the conversation => END
+=> END
