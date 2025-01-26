@@ -50,6 +50,12 @@ theme_type_variation = &"ActionButton"
 text = "Talk
 "
 
+[node name="PushActionButton" type="Button" parent="HBoxContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+theme_type_variation = &"ActionButton"
+text = "Push
+"
+
 [node name="Panel2" type="Panel" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
